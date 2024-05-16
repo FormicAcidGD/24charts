@@ -1122,7 +1122,7 @@ let charts: Chart[] = [
         author: "AeroNav",
         id: 120,
         category: "APP",
-        name: "gls rwy 29",
+        name: "gls rwy 33",
         file: '/charts/perth/aeronav/gls 33.jpg',
         runways: ["33"],
     },
