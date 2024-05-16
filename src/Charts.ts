@@ -2253,7 +2253,7 @@ let charts: Chart[] = [
     },
     {
         airport: "IHEN",
-        author: "StasON_Toppp",
+        author: "StasON_Topp",
         id: 244,
         category: "GND",
         name: "aerodrome chart",
@@ -2262,7 +2262,7 @@ let charts: Chart[] = [
     },
     {
         airport: "IHEN",
-        author: "StasON_Toppp",
+        author: "StasON_Topp",
         id: 245,
         category: "SID",
         name: "rnav rwy 17 foria 1a aqwrt 1a",
@@ -2271,7 +2271,7 @@ let charts: Chart[] = [
     },
     {
         airport: "IHEN",
-        author: "StasON_Toppp",
+        author: "StasON_Topp",
         id: 246,
         category: "SID",
         name: "rnav rwy 35 foria 1b aqwrt 1b",
@@ -2280,7 +2280,7 @@ let charts: Chart[] = [
     },
     {
         airport: "IHEN",
-        author: "StasON_Toppp",
+        author: "StasON_Topp",
         id: 247,
         category: "STAR",
         name: "rnav rwy 17 foria 2a aqwrt 2a",
@@ -2289,7 +2289,7 @@ let charts: Chart[] = [
     },
     {
         airport: "IHEN",
-        author: "StasON_Toppp",
+        author: "StasON_Topp",
         id: 248,
         category: "STAR",
         name: "rnav rwy 35 foria 2b aqwrt 2b",
