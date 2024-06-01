@@ -3104,7 +3104,7 @@ let charts: Chart[] = [
         category: "GND",
         name: "aerodrome chart",
         file: '/charts/larnaca/VilleWilleK10/aerodrome.png',
-        runways: ["Ground"],
+        runways: [],
     },
     {
         airport: "ILAR",
@@ -3167,7 +3167,7 @@ let charts: Chart[] = [
         category: "GEN",
         name: "General",
         file: '/charts/larnaca/VilleWilleK10/General.png',
-        runways: ["Information"],
+        runways: [],
     },
     {
         airport: "ILAR",
@@ -3176,7 +3176,7 @@ let charts: Chart[] = [
         category: "GEN",
         name: "Arrival",
         file: '/charts/larnaca/VilleWilleK10/Arrival.png',
-        runways: ["Information"],
+        runways: [],
     },
     {
         airport: "ILAR",
@@ -3230,7 +3230,7 @@ let charts: Chart[] = [
         category: "GND",
         name: "Before Takeoff Taxi",
         file: '/charts/larnaca/VilleWilleK10/mtnvis24.png',
-        runways: ["Ground"],
+        runways: [],
     },
     {
         airport: "ILAR",
@@ -3239,7 +3239,7 @@ let charts: Chart[] = [
         category: "GND",
         name: "After Landing Taxi",
         file: '/charts/larnaca/VilleWilleK10/afterlntaxi.png',
-        runways: ["Ground"],
+        runways: [],
     },
     {
     airport: "ILAR",
@@ -3248,7 +3248,7 @@ let charts: Chart[] = [
     category: "GND",
     name: "Parking/Ramp",
     file: '/charts/larnaca/VilleWilleK10/Gates.png',
-    runways: ["Ground"],
+    runways: [],
 },
 ]
 export { charts, type Chart }
