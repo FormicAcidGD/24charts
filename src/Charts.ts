@@ -2634,9 +2634,9 @@ let charts: Chart[] = [
         author: "MrGearz",
         id: 286,
         category: "STAR",
-        name: "rnav rwy 7 bully 1b guleg 1a",
+        name: "rnav rwy 07 bully 1b guleg 1a",
         file: '/charts/saba/gearz/star 07.jpg',
-        runways: ["7"],
+        runways: ["07"],
     },
     {
         airport: "IDCS",
@@ -2690,7 +2690,7 @@ let charts: Chart[] = [
         category: "STAR",
         name: "rnav rwy 07 anyms 2b detox 2b",
         file: '/charts/najaf/midwest/star 07 1.jpg',
-        runways: ["7"],
+        runways: ["07"],
     },
     {
         airport: "IJAF",
@@ -2699,7 +2699,7 @@ let charts: Chart[] = [
         category: "STAR",
         name: "rnav rwy 07 camel 1a noonu 1a silva 1a",
         file: '/charts/najaf/midwest/star 07 2.jpg',
-        runways: ["7"],
+        runways: ["07"],
     },
     {
         airport: "IJAF",
@@ -2735,7 +2735,7 @@ let charts: Chart[] = [
         category: "APP",
         name: "rnav (rnp) y 07",
         file: '/charts/najaf/midwest/rnp y 07.jpg',
-        runways: ["7"],
+        runways: ["07"],
     },
     {
         airport: "IJAF",
@@ -2744,7 +2744,7 @@ let charts: Chart[] = [
         category: "APP",
         name: "rnav (rnp) z 07",
         file: '/charts/najaf/midwest/rnp z 07.jpg',
-        runways: ["7"],
+        runways: ["07"],
     },
     {
         airport: "IBTH",
@@ -3248,7 +3248,7 @@ let charts: Chart[] = [
         category: "SID",
         name: "DARRK 3 RNAV DEPARTURE",
         file: '/charts/rockford/AreoNav/SID/DARRK3.png',
-        runways: [],
+        runways: []
     },
     {
         airport: "IRFD",
