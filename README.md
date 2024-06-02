@@ -51,4 +51,4 @@ If you have any questions or suggestions, feel free to reach out!
 
 - [ChartFox](https://chartfox.org) for the inspiration.
 - All contributors and aviation enthusiasts for their support.
-- @awdev1 for making this readme
+- [@awdev1](https://github.com/awdev1/) for making this readme
