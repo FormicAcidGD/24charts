@@ -11,7 +11,6 @@ Welcome to **24 Charts**, a chart database for the Roblox game Pilot Training Fl
 
 - **User-friendly Interface**: Clean and intuitive interface for easy navigation.
 - **Comprehensive Database**: Access to a wide variety of charts including SID, STAR, Approach Plates, and more.
-- **Regular Updates**: Ensure you have the latest charts with our regular updates.
 
 ## Getting Started
 
@@ -28,7 +27,7 @@ You can access 24Charts directly through GitHub Pages:
 
 ## Contributing
 
-Contributions are always welcome! Here’s how you can help:
+Contributions are always welcome for charts and stuff! Here’s how you can help:
 
 1. Fork the repository.
 2. Make your changes and commit them to your repo.
@@ -52,3 +51,4 @@ If you have any questions or suggestions, feel free to reach out!
 
 - [ChartFox](https://chartfox.org) for the inspiration.
 - All contributors and aviation enthusiasts for their support.
+- @awdev1 for making this readme
