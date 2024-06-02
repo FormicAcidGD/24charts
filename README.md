@@ -1,0 +1,54 @@
+# 24Charts
+
+Welcome to **24 Charts**, a chart database for the Roblox game Pilot Training Flight Simulator.
+
+
+## Overview
+
+24 Charts provides free access to a wide range of aeronautical charts from PTFS, ensuring you have the latest information for flight planning and operations. 
+
+## Features
+
+- **User-friendly Interface**: Clean and intuitive interface for easy navigation.
+- **Comprehensive Database**: Access to a wide variety of charts including SID, STAR, Approach Plates, and more.
+- **Regular Updates**: Ensure you have the latest charts with our regular updates.
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- You hopefully have a web browser installed (You're viewing this thru something else aren't you lol).
+
+### Accessing 24Charts
+
+You can access 24Charts directly through GitHub Pages:
+
+[24 Charts on GitHub Pages](https://formicacidgd.github.io/24charts/)
+
+## Contributing
+
+Contributions are always welcome! Here’s how you can help:
+
+1. Fork the repository.
+2. Make your changes and commit them to your repo.
+3. Open a Pull Request.
+4. Pray that your PR is accepted and deployed :)
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out!
+
+- **GitHub Issues**: [Open an Issue](https://github.com/formicacidgd/24charts/issues)
+- **Discord**: [Join our Discord Community](https://discord.gg/8tSu4ewdsM)
+
+---
+
+*Happy fling!*
+
+---
+
+## Acknowledgements
+
+- [ChartFox](https://chartfox.org) for the inspiration.
+- All contributors and aviation enthusiasts for their support.
