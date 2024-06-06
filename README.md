@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 
 You can access 24Charts directly through GitHub Pages:
 
-[24 Charts on GitHub Pages](https://formicacidgd.github.io/24charts/)
+[24Charts on GitHub Pages](https://formicacidgd.github.io/24charts/)
 
 ## Contributing
 
