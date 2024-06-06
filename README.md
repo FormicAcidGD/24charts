@@ -1,11 +1,11 @@
 # 24Charts
 
-Welcome to **24 Charts**, a chart database for the Roblox game Pilot Training Flight Simulator.
+Welcome to **24Charts**, a chart database for the Roblox game Pilot Training Flight Simulator.
 
 
 ## Overview
 
-24 Charts provides free access to a wide range of aeronautical charts from PTFS, ensuring you have the latest information for flight planning and operations. 
+24Charts provides free access to a wide range of aeronautical charts from PTFS, ensuring you have the latest information for flight planning and operations. 
 
 ## Features
 
@@ -17,7 +17,7 @@ Welcome to **24 Charts**, a chart database for the Roblox game Pilot Training Fl
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- You hopefully have a web browser installed (You're viewing this thru something else aren't you lol).
+- You hopefully have a web browser installed (You're viewing this thru a terminal aren't you lol).
 
 ### Accessing 24Charts
 
@@ -50,5 +50,6 @@ If you have any questions or suggestions, feel free to reach out!
 ## Acknowledgements
 
 - [ChartFox](https://chartfox.org) for the inspiration.
-- All contributors and aviation enthusiasts for their support.
+- [@FormicAcidGD](https://github.com/formicacidgd/) for making this project
 - [@awdev1](https://github.com/awdev1/) for making this readme
+- 
