@@ -33,6 +33,7 @@ Contributions are always welcome for charts and stuff! Here’s how you can help
 2. Make your changes and commit them to your repo.
 3. Open a Pull Request.
 4. Pray that your PR is accepted and deployed :)
+5. Pray that you didn't take down production lol
 
 ## Contact
 
