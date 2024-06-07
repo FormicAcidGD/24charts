@@ -53,4 +53,4 @@ If you have any questions or suggestions, feel free to reach out!
 - [ChartFox](https://chartfox.org) for the inspiration.
 - [@FormicAcidGD](https://github.com/formicacidgd/) for making this project
 - [@awdev1](https://github.com/awdev1/) for making this readme
-- 
+
