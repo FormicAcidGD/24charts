@@ -7,10 +7,13 @@
             </nav>
             <main class="bg-fox-1 text-fox-2 min-h-screen w-full pt-12 h-screen overflow-hidden">
                 <div class="fox-app-swipe-target flex h-full w-full items-stretch">
+                    <!-- Sidebar with chart categories and Download button -->
                     <div class="z-20 w-0 transition-all xl:w-96" style="transform: translateX(0px); transition-duration: 150ms;">
                         <div class="bg-fox-2 flex flex-col items-stretch gap-4 p-4 relative z-20 h-full w-screen transition-transform xs:w-96 -translate-x-full xl:translate-x-0">
                             <div class="flex items-center gap-2">
                                 <h2 class="flex-grow font-semibold">Charts</h2>
+                                <!-- Download Current Chart button moved here -->
+                                <button @click="downloadCurrentChart" class="download-btn">Download Current Chart</button>
                             </div>
                             <div class="flex flex-col items-stretch">
                                 <div class="transition-all h-0"></div>
@@ -49,7 +52,6 @@
                                             <div class="flex flex-grow flex-col gap-1">
                                                 <h4 class="font-medium leading-tight">{{ i.name.toLocaleUpperCase() }}</h4>
                                             </div>
-                                            <button @click.stop="downloadChart(i)" class="download-btn">Download</button>
                                         </a>
                                     </li>
                                 </ul>
@@ -62,7 +64,7 @@
                                                     <div class="flex flex-grow flex-col gap-1">
                                                         <h4 class="font-medium leading-tight">{{ i.name.toLocaleUpperCase() }}</h4>
                                                     </div>
-                                                    <button @click.stop="downloadChart(i)" class="download-btn">Download</button>
+                                                
                                                 </a>
                                             </li>
                                         </ul>
@@ -72,6 +74,7 @@
                             <p class="text-center text-sm italic transition-opacity hidden opacity-0"> No results. </p>
                         </div>
                     </div>
+                    <!-- Main content area with map -->
                     <div class="relative flex-grow">
                         <div class="bg-fox-300 dark:bg-fox-850 fox-app-swipe-target h-full w-full">
                             <div class="fox-app-swipe-target relative h-full overflow-hidden outline-none">
@@ -79,7 +82,7 @@
                                     <div class="fox-app-swipe-target h-full focus:outline-none" tabindex="0" id="ligmatizer"></div>
                                 </div>
                             </div>
-                            <button @click="downloadCurrentChart" class="download-btn">Download Current Chart</button>
+                            <!-- Removed the old download button -->
                         </div>
                     </div>
                 </div>
@@ -97,20 +100,24 @@
         </div>
     </div>
 </template>
+
 <script setup lang="ts">
 import "@/assets/app.css";
 import L from "leaflet";
 import { generateAirports } from "ptfst-db";
 import { onBeforeUnmount, onMounted, ref, watch, type Ref } from "vue";
 import { charts, type Chart } from "./Charts";
+
 let currentChart: Ref<Chart> = ref(charts[0])
 let chartURL: Ref<string | null> = ref(null);
 let currentCategory = ref("")
+
 onMounted(() => {
     fresh()
     window.addEventListener("resize", refresh)
     window.addEventListener("popstate", fresh);
 })
+
 function fresh() {
     chartURL.value = window.location.hash
     if (chartURL.value.length > 0) {
@@ -126,10 +133,13 @@ function fresh() {
         }
     }
 }
+
 onBeforeUnmount(() => {
     window.removeEventListener("resize", refresh)
 })
+
 let map: L.Map;
+
 function refresh() {
     if (map) {
         map.remove()
@@ -141,7 +151,6 @@ function refresh() {
     const img = new Image();
     img.src = "/24charts" + currentChart.value.file;
     img.addEventListener("load", () => {
-
         let scaleFactor = img.naturalHeight / 400
 
         L.imageOverlay(img.src, [[0, 0], [img.naturalHeight / scaleFactor, img.naturalWidth / scaleFactor]], {
@@ -153,6 +162,7 @@ function refresh() {
     })
     getRunwayGroupItems()
 }
+
 function getCategoryItems() {
     return charts.filter(e => {
         return e.airport == currentChart.value.airport && e.category == currentCategory.value && e.author == currentChart.value.author && e.runways.length == 0
@@ -163,6 +173,7 @@ interface RunwayGroup {
     runway: string,
     charts: Chart[]
 }
+
 function getRunwayGroupItems(): RunwayGroup[] {
     let groups: RunwayGroup[] = []
     let relevantCharts = charts.filter(e => {
@@ -185,6 +196,7 @@ function getRunwayGroupItems(): RunwayGroup[] {
     
     return groups
 }
+
 function getItemClass(c: Chart) {
     if (currentChart.value.id != c.id) {
         return "bg-fox-3"
@@ -202,6 +214,7 @@ function getItemClass(c: Chart) {
             return "bg-fox-emerald"
     }
 }
+
 function setChart(c: Chart) {
     window.location.hash = `${c.id}`
     chartURL.value = `${c.id}`
@@ -209,12 +222,14 @@ function setChart(c: Chart) {
     currentCategory.value = c.category
     window.requestAnimationFrame(refresh)
 }
+
 function goHome() {
     window.location.hash = ``
     chartURL.value = ``
     currentChart.value = charts[0]
     currentCategory.value = ""
 }
+
 function getPacks(airport: string) {
     let packs: Chart[] = []
     charts.filter(e => e.airport == airport).forEach(c => {
@@ -225,19 +240,20 @@ function getPacks(airport: string) {
     })
     return packs
 }
+
 watch(currentChart, refresh)
 
 // Download Chart function
 function downloadChart(chart: Chart) {
-    // Assuming the file path is stored in the `file` property of the chart object
     const url = `/24charts${chart.file}`;
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', chart.name); // Set the filename for download
+    link.setAttribute('download', chart.name);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
+
 // Download Current Chart function
 function downloadCurrentChart() {
     if (currentChart.value) {
@@ -245,4 +261,3 @@ function downloadCurrentChart() {
     }
 }
 </script>
-
