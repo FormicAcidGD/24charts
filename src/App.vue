@@ -163,16 +163,13 @@ function refresh() {
     getRunwayGroupItems()
 }
 
+
 function getCategoryItems() {
     return charts.filter(e => {
-        console.log(e.author); // Check what categories exist
-        return e.airport == currentChart.value.airport && 
-               e.category == currentCategory.value && 
-               e.author == currentChart.value.author && 
-               e.runways.length == 0 && 
-               !['shv', 'owo'].includes(e.category);
-    });
+        return e.airport == currentChart.value.airport && e.category == currentCategory.value && e.author == currentChart.value.author && e.runways.length == 0
+    })
 }
+
 
 interface RunwayGroup {
     runway: string,
